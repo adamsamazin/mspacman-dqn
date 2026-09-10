@@ -51,9 +51,14 @@ was made before its results existed, not chosen afterwards for being higher. See
 
 ## How to run it
 
-1. Open [`pacman_dqn.ipynb`](pacman_dqn.ipynb) in Google Colab, or locally on a Python 3.11–3.13 kernel.
+[**▶ Open `pacman_dqn.ipynb` in Google Colab**](https://colab.research.google.com/github/adamsamazin/mspacman-dqn/blob/main/pacman_dqn.ipynb)
+
+1. Open the notebook with the link above, or locally on a Python 3.11–3.13 kernel.
 2. **Runtime → Change runtime type → T4 GPU.**
 3. **Runtime → Run all.** The notebook installs its own packages and detects CUDA, MPS, or CPU.
+
+Reproducing run 2 takes about 58 minutes on a T4. The first cell offers to mount Google Drive so
+results survive a disconnect; deleting that cell changes nothing about the experiment.
 
 The three settings live in the Section 1 cell. Nothing else needs editing to reproduce run 2.
 
