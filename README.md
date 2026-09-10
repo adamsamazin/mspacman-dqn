@@ -29,13 +29,25 @@ was made before its results existed, not chosen afterwards for being higher. See
 
 | File | What it is |
 |---|---|
-| [`pacman_dqn.ipynb`](pacman_dqn.ipynb) | Run 2, executed, all outputs intact |
+| [`pacman_dqn.ipynb`](pacman_dqn.ipynb) | **Run 2, executed** — scores, training log, and plots visible on GitHub |
+| [`notebooks/pacman_dqn_run2_full_outputs.ipynb`](notebooks/pacman_dqn_run2_full_outputs.ipynb) | Run 2, byte-for-byte as Colab saved it |
 | [`notebooks/pacman_dqn_run1_400ep.ipynb`](notebooks/pacman_dqn_run1_400ep.ipynb) | Run 1, executed |
+| [`notebooks/pacman_dqn_run1_400ep_full_outputs.ipynb`](notebooks/pacman_dqn_run1_400ep_full_outputs.ipynb) | Run 1, as Colab saved it |
 | [`results/run2_1250ep/comparison.json`](results/run2_1250ep/comparison.json) | **All ten evaluation scores for run 2** |
 | [`results/run2_1250ep/config.json`](results/run2_1250ep/config.json) | Every setting and package version |
 | [`results/run2_1250ep/training.csv`](results/run2_1250ep/training.csv) | Per-episode score, loss, decisions, timing |
 | [`results/run2_1250ep/training_summary.json`](results/run2_1250ep/training_summary.json) | Run totals |
 | [`results/run1_400ep/`](results/run1_400ep/) | The same seven files for run 1 |
+
+> **A note on the two notebook copies.** GitHub will not render a notebook larger than about 1 MB,
+> and the notebooks Colab produced were 2.51 MB and 1.05 MB — 80% of that being animated gameplay
+> GIFs embedded inline as base64. Left as-is, clicking the notebook on GitHub showed a blank page.
+> The copies at `pacman_dqn.ipynb` and `notebooks/pacman_dqn_run1_400ep.ipynb` therefore have those
+> inline GIF previews removed, and nothing else: every printed score, the full per-episode training
+> log, the final comparison table, and the training dashboard are untouched, and each removed
+> preview leaves a placeholder saying where the GIF went. All 70 GIFs are published in full under
+> `results/*/gifs/` and embedded further down this page. The unmodified files Colab wrote are kept
+> alongside as `*_full_outputs.ipynb` for anyone who wants to diff them.
 
 ## How to run it
 
